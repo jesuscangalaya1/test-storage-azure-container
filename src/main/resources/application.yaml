@@ -1,0 +1,28 @@
+#spring.datasource.url=jdbc:h2:mem:testdb
+#spring.datasource.driverClassName=org.h2.Driver
+#spring.datasource.username=sa
+#spring.datasource.password=
+#spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+#spring.h2.console.enabled=true
+
+#http://localhost:8080/h2-console
+
+#MYSQL
+spring:
+  datasource:
+    url: jdbc:mysql://containers-us-west-125.railway.app:7397/railway
+    username: root
+    password: 5hpUY0aLRRLoz17j8MlO
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+
+azure:
+  storage:
+    connection-string: DefaultEndpointsProtocol=https;AccountName=applowerstorage;AccountKey=UTNxJ3WmCexksaHNApbOZG+AoHkPtvvcbb2YNM89VEUweRh7pF7J34bhL/dRh7kfbS29dz24jpRn+AStUMg+fA==;EndpointSuffix=core.windows.net
+    container-name: portalservicesmanager
+
+
